@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 800px;
+            /* height: 600px; */
+            /* background: burlywood; */
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        .info{
+            text-align: center;
+        }
+        .time{
+            color: #808080;
+        }
+        .sina{
+            color: #87ceeb;
+            font-weight: 700;
+        }
+        .link{
+            text-decoration: none;
+        }
+        p{
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>《自然》评选改变</h1>
+        <div class="info">
+            <span class="time">2077年01月28日14:58</span>
+            <span class="sina">新浪科技</span>
+            <a href="#" class="link">收藏文本</a><hr>
+        </div>
+        <p>随着网络文化的发展，美文的概念已经不限定于某种文体，或某类内容。网络文化是一种开放、自由的文化，给美文的概念也赋予了更多的开放自由的元素，好散文是美文，好诗歌是美文，好小说是美文，好论文是美文，下面为大家带来美文600字（精选40篇），快来看看吧。</p>
+        <p>美文（belles-lettres），《法汉词典》译为“纯文学”，法文《拉鲁斯普通名词大词典》中的定义是：“文学、修辞、诗歌艺术的总体，”修辞和诗歌也可以由“文学”来概括</p>
+        <p>生犹如一列疾驰的火车,疾驰在生命的旅程,上演韶华绽放的秀丽。我们都是故事的主角,无论是熟悉的,陌生的,遇见的,错过的,记忆的,遗忘的</p>
+    </div>
+</body>
+</html>
