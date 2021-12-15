@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration-line: none;
+            text-align: center;
+        }
+        a:hover{
+           color: orange;
+           text-decoration: underline; 
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:darkblue;
+            margin: auto;
+        }
+        p{
+            color: darkblue;
+            font-size: 80px;
+            text-align: center;
+        }
+        .box:hover{
+            background:red;
+            width: 1000px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">你把鼠标放图片身上看看</a>
+    <div class="box">
+        <p>你必考上</p>
+    </div>
+</body>
+</html>
