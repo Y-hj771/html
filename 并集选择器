@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .father>p{
+            color: burlywood;
+        } */
+        div,
+        p{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>我是一个子标签</p>
+    <div><p>我是一个孙子标签</p></div>
+</div>
+</body>
+</html>
