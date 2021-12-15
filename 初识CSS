@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2.外联式 -->
+    <link rel="stylesheet" href="./01.css">
+    <!-- <style> 1.内嵌式
+        p{ 
+            字体颜色 
+            color: red; 
+            字体大小 px代表像素 
+            font-size: 30px; 
+            background-color: skyblue; 
+            背景颜色的宽度和高度
+            width: 200px; 
+            height: 200px;  
+        }
+    </style>-->
+</head>
+<body>
+    <p>你好世界</p>
+</body>
+</html>
