@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* border和padding都会撑大盒子的小 */
+        /* 宽度=左border+左padding+内容宽度+右padding+右border */
+        /* 高度=上border+上padding+内容高度+下padding+下border */
+        div {
+            width: 240px;
+            height: 240px;
+            background-color: pink;
+            border: 10px solid #000;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
