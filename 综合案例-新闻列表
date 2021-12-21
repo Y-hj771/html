@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /*去除行高带来的默认间隙，完成精准布局*/
+            line-height: 1;
+        }
+        .box {
+            width: 500px;
+            height: 400px;
+            /* background-color: pink; */
+            border: 1px solid #cccccc;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 41px;
+            box-sizing: border-box;
+        }
+        .box h2 {
+            height: 41px;
+            /* background-color: pink; */
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        .box ul {
+            list-style: none;
+        }
+        .box ul li {
+            box-sizing: border-box;
+            height: 51px;
+            border-bottom: 1px dashed #ccc;
+            line-height: 51px;
+            padding-left: 30px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>最新文章//New Articles</h2>
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+</body>
+</html>
