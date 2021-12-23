@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 早期用于图片环绕；后用于网页布局，让垂直布局的内容水平布局 -->
+    <style>
+        .left {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            color: blue;
+            font-size: 30px;
+            font-family: 宋体;
+            text-align: center;
+            line-height: 200px;
+        }
+        .right {
+            float: right;
+            width: 200px;
+            height: 200px;
+            background-color:green;
+            color: crimson;
+            font-size: 30px;
+            font-family: 楷体;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">左护法</div>
+    <div class="right">右护法</div>
+</body>
+</html>
