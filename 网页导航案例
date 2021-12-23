@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.清楚默认的margin和padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 2.去除标签前的小圆点 */
+        ul {
+            list-style: none;
+        }
+        /* 3.设置浮动让li一行中显示 */
+        li {
+            float: left;
+        }
+        /* 4.设置宽高，a标签默认是行内元素，默认是不能设置宽高的
+               可以通过设置浮动；也可以通过设值display：inline-block/block */
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 50px;
+            background-color: #ffc0cb;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">新闻1</a></li>
+        <li><a href="#">新闻2</a></li>
+        <li><a href="#">新闻3</a></li>
+        <li><a href="#">新闻4</a></li>
+        <li><a href="#">新闻5</a></li>
+        <li><a href="#">新闻6</a></li>
+        <li><a href="#">新闻7</a></li>
+        <li><a href="#">新闻8</a></li>
+    </ul>
+</body>
+</html>
