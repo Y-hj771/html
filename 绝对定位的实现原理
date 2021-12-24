@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 祖先中有定位，跟最近的走 */
+        .father {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            background-color: darkkhaki;
+        }
+        .son {
+            /* position: relative; */
+            width: 400px;
+            height: 400px;
+            background-color: darkmagenta;
+        }
+        /* 1.祖先中没有定位，所以跟默认的网页 */
+        .sun {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+            <div class="sun"></div>
+        </div>
+    </div>
+</body>
+</html>
