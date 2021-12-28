@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: firebrick;
+        }
+        .son {
+            /* 元素本身隐藏 */
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+        }
+        .father:hover .son {
+            /* 元素本身显示 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
