@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../01-字体图标/iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        .box {
+            width: 1110px;
+            height: 247px;
+            margin: 20px auto;
+        }
+        .box li {
+            position: relative;
+            /* float: left; */
+            width: 350px;
+            height: 247px;
+            margin:auto;
+            /* overflow: hidden; */
+        }
+        img {
+            width: 100%;
+        }
+        .txt {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 350px;
+            height: auto;
+            padding: 20px 30px;
+            z-index: 1;
+            color: #fff;
+            transition: transform .7s;
+        }
+        h4 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 2em;
+            color: #fff;
+        }
+        h5 {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 1.5em;
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            font-size: 14px;
+        }
+        /* 渐变盒子 */
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 247px;
+            background-image: linear-gradient(
+                transparent,
+                rgba(0,0,0,.5)
+            );
+            opacity: 0;
+            transition: all .6s;
+        }
+        /* hover效果 */
+        .box li:hover img {
+            transform: scale(1.1);
+        }
+        .box img {
+            transition: all .8s;
+        }
+        .box li:hover .mask {
+            opacity: 1;
+        }
+        .box li:hover .txt {
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <a href="" class="pic">
+                    <img src="../02-平面转换/image/huawei1.jpeg" alt="">
+               
+                    <div class="txt">
+                    <h4>行业洞察</h4>
+                    <h5>迈向智能世界2030</h5>
+                    <p>
+                        <span>了解更多</span>
+                        <i class="iconfont icon-arrow-right"></i>
+                    </p>
+                    </div>
+                    <!-- 添加渐变盒子 -->
+                    <div class="mask"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
