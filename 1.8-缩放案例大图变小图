@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        ul {
+            list-style: none;
+        }
+        .box {
+            width: 400px;
+            height: 350px;
+            margin: 100px auto;
+        }
+        li {
+            width: 400px;
+            height: 350px;
+        }
+        .pic img {
+            width: 100%;
+        }
+        p {
+            color: #3b3b3b;
+            padding: 10px 10px 0px 10px;
+        }
+        .pic {
+            position: relative;
+        }
+        .pic::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            width: 58px;
+            height: 58px;
+            background: url('./image/play.png');
+            transform: translate(-50%,-50%) scale(5);
+            transition: all .6s;
+            opacity: 0;
+        }
+        /* li hover的时候谁变化 pic::after变化 */
+        li:hover .pic::after {
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="pic"><img src="./image/party.jpeg" alt=""></div>
+                <p>呵呵呵呵呵呵额尔打算发大水爱wqr dqr qrqw额外若无二位惹我绕弯儿e r</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
