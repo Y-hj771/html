@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin: 100px auto;
+            transition: all 3s;
+            /* 立体元素 */
+            transform-style: preserve-3d;
+        }
+        .front {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            background-color: oldlace;
+            transform: translateZ(200px);
+        }
+        .back {
+            position: absolute;
+            top: 0;
+            left: o;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .cube:hover {
+            transform: rotateY(200deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="front">前面</div>
+        <div class="back">后面</div>
+    </div>
+</body>
+</html>
