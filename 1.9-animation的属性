@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* animation: pink 2s linear; */
+            /* 分步动画 */
+            /* animation:p 2s steps(4) ; */
+            /* 动画属性：animation:动画名称 动画时长 速度曲线 延迟时间 
+                重复次数 动画方向 执行完毕时状态； */
+            /* animation: p 2s 3s infinite alternate;     */
+
+            /* 默认值：动画停留在最初的状态 */
+            /* animation: p 2s backwards; */
+
+            /* 动画停留在结束的状态 */
+            animation: p 2s forwards;
+        }
+        @keyframes p {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+/* 必须要有动画名称和动画时长*/
