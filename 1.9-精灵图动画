@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 140px;
+            height: 140px;
+            background-image: url('./images/bg.png');
+            /* 12代表精灵图小图的个数 */
+            animation: p 1s steps(12) infinite;
+        }
+        @keyframes p {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                /* 1680代表精灵图的宽度 */
+                background-position: -1680px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
