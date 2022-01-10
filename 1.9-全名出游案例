@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 云彩 -->
+    <div class="cloud">
+        <img src="./img/yun1.png" alt="">
+        <img src="./img/yun2.png" alt="">
+        <img src="./img/yun3.png" alt="">
+    </div>
+    <div class="balloon">
+        <img src="./img/san.png" alt=""> 
+    </div>   
+    <div class="giraffe">
+        <img src="./img/lu.png" alt="">
+    </div>
+    <div class="pic">
+        <img src="./img/font1.png" alt="">
+    </div>
+    <div class="botton">
+        <img src="./img/1.png" alt="">
+        <img src="./img/2.png" alt="">
+        <img src="./img/3.png" alt="">
+        <img src="./img/4.png" alt="">
+    </div>
+</body>
+</html>
+/*css部分*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    
+    height: 100%;
+}
+body {
+   
+    height: 100%;
+    background: url('./img/f1_1.jpg')no-repeat center;
+
+
+    /* 缩放背景图 */
+    /* 图片等比例缩放，当宽度或者高度和盒子尺寸相等，图片就不在缩放 */
+    /* background-size: contain; */
+
+    /* 图片等比例缩放，图片完全覆盖到整个盒子，可能会导致图片显示不全 */
+    background-size: cover;
+}
+.cloud {
+    position: relative;
+}
+/* 1.引入图片，控制位置 */
+.cloud img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
+.cloud img:first-child {
+    margin-left: -300px;
+    margin-top: 20px;
+    animation: cloud 1s infinite alternate;
+}
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    margin-top: 100px;
+    animation: cloud 1s .5s infinite alternate;
+}
+.cloud img:last-child {
+    margin-left: -550px;
+    margin-top: 200px;
+    animation: cloud 1s 1s infinite alternate;
+}
+
+/* 2.定义动画，使用动画 */
+@keyframes cloud {
+    to {
+        transform: translateX(20px);
+    }
+}
+.balloon {
+    position: relative;
+}
+.balloon img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-top: 110px;
+    margin-left: -438px;
+    animation: balloon 1s infinite alternate;
+}
+@keyframes balloon {
+    to {
+        /* transform: translateY(30px); */
+        transform: rotateY(360deg);
+    }
+}
+.giraffe img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+.pic img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-top: 344px;
+    margin-left: -327px;
+}
+
+.botton img {
+    position: absolute;
+    width: 73px;
+    top: 0px;
+    left: 50%;
+}
+.botton img:nth-child(1) {
+    margin-top: 769px;
+    margin-left: -357px;
+    animation: botton 1s infinite alternate;
+}
+.botton img:nth-child(2) {
+    margin-top: 769px;
+    margin-left: -166px;
+    animation: botton 1s infinite alternate .4s;
+}
+.botton img:nth-child(3) {
+    margin-top: 769px;
+    margin-left: 70px;
+    animation: botton 1s infinite alternate .8s;
+}
+.botton img:nth-child(4) {
+    margin-top: 769px;
+    margin-left: 260px;
+    animation: botton 1s infinite alternate 1s;
+}
+@keyframes botton {
+    to {
+        transform: translateY(30px);
+    }
+}
+
